@@ -1,0 +1,94 @@
+footer{
+    margin-top: 6.5rem;
+    padding: 2rem 0 4.5rem;
+    background: $box-color;
+
+    .footer__container__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.6rem;
+
+        .footer__title{
+            font-size: $h1-font-size;
+            margin-bottom: .75rem;
+        }
+        .footer__subtitle{
+            font-size: $small-font-size;
+        }
+
+        .footer__links{
+            display: flex;
+            justify-self: center;
+            column-gap: 2rem;
+
+            .footer__link{
+                color: $title-color;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+
+        .footer__socials{
+            justify-self: flex-end;
+            .footer__social{
+                font-size: 1.25rem;
+                margin-left: 1.5rem;
+                color: $title-color;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+
+        
+    }
+    .footer__copyright{
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    footer{
+        margin-top: 3.5rem;
+        padding: 2rem 0 5rem;
+    
+        .footer__container__grid{
+            grid-template-columns: auto auto auto;
+            column-gap: 1.6rem;
+    
+           
+    
+            .footer__links{
+                flex-direction: column !important;
+                row-gap: 1rem;
+            }
+    
+            .footer__socials{
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+                .footer__social{
+                    font-size: 1.25rem;
+                    margin-right: 0;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+    footer{
+        padding: 2rem 0 9rem;
+    
+        .footer__container__grid{
+            .footer__title{
+                font-size: 1.5rem;
+            }
+          
+        }
+    }
+}

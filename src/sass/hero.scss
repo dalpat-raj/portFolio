@@ -1,0 +1,126 @@
+.home__main{
+   
+    .home__container{
+        height: 100vh;
+        background: url("../assets/banner.png")top center;
+        background-size: cover;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8rem;
+
+        .home__social{
+            display: inline-flex;
+            align-items: center;
+            column-gap: 3rem;
+            .home__social__follow{
+                position: relative;
+                color: $text-color;
+                &::after{
+                    content: '';
+                    width: 20px;
+                    height: 2px;
+                    position: absolute;
+                    right: -2rem;
+                    top: 40%;
+                    background: $text-color;
+                }
+            }
+            .home__social__link{
+                padding: 0 1rem;
+                font-size: 1.5rem;
+                color: $title-color;
+                transition: $transition;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+
+        .home__data{
+            .home__title{
+                font-size: $big-font-size;
+            }
+            .home__subtitle{
+                font-size: $h3-font-size;
+                font-weight: $font-medium;
+                margin-bottom: 1rem;
+            }
+            .home__description{
+                max-width: 500px;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .my__info{
+            display: flex;
+            column-gap: 1.8rem;
+            .info__item{
+                display: flex;
+                align-items: center;
+                .info__title, .info__subtitle{
+                    font-size: $small-font-size;
+                }
+                .info__title{
+                    font-weight: $font-medium;
+                }
+                .info__icon{
+                    font-size: 1.8rem;
+                    color: $primary;
+                    margin-right: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .home__main{
+       
+        .home__container{
+            background-position:top right;
+            background-repeat: no-repeat;
+            height: auto;
+            padding-top: 2rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 4rem;
+            .home__social{
+                .home__social__link{
+                    padding: 0 0.5rem;
+                    font-size: 1.2rem;
+                }
+            }
+            .my__info{
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+    .home__main{
+        
+        .home__container{
+            padding-top: 1rem;
+            row-gap: 7rem;
+            background: none;
+
+            .home__data{
+                .home__title{
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            .my__info{
+                display: flex;
+                flex-direction: column;
+                row-gap: 1.5rem;text-align: left;
+            }
+        }
+    }
+}

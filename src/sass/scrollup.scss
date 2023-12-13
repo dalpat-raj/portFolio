@@ -1,0 +1,35 @@
+.show__scroll{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background: $box-color;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid $bg-body;
+    cursor: pointer;
+    transition: $transition;
+    z-index: 2;
+    .scrollup__icon{
+        font-size: 1.5rem;
+        color: $title-color;
+    }
+    &:hover .scrollup__icon{
+        color: $primary;
+    }
+}
+
+.scrollup{
+    transition: $transition;
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .show__scroll{
+        bottom: 5rem;
+        right: 0.5rem;
+        padding: 0.7rem;
+        .scrollup__icon{
+            font-size: 1.25rem;
+        }
+    }
+}

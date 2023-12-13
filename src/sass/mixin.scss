@@ -1,0 +1,15 @@
+
+@mixin flex($jc, $ai, $fw){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
+
+@mixin defaultValue{
+    text-decoration: none;
+    list-style-type: none;
+    border: 0;
+    outline: none;
+    background: none;
+}

@@ -1,0 +1,21 @@
+
+
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 96% !important;
+        // padding: 0 10px !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+@media only screen and (max-width:480px){
+  .section__title__heading{
+    margin-bottom: 1.5rem !important;
+  }
+}
+@media only screen and (max-width:768px){
+  .section__title__heading{
+    margin-bottom: 1.5rem !important;
+  }
+}

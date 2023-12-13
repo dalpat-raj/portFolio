@@ -1,0 +1,107 @@
+.main__about{
+    // padding-bottom: 0;
+    padding-top: 6.5rem;
+    .about__section{
+
+        .about__container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            align-items: center;
+            .about__img{
+                width: 400px;
+                border-radius: 0.75rem;
+                justify-self: center;
+            }
+            .about__data{
+                .about__heading{
+                    font-size: $h3-font-size;
+                    margin-bottom: 0.75rem;
+                }
+                .about__description{
+                    text-align: justify;
+                    padding-right: 4rem;
+                    margin-bottom: 3rem;
+                }
+
+                .about__info{
+                    display: grid;
+                    grid-template-columns: repeat(3, auto);
+                    column-gap: .5rem;
+                    margin-bottom: 3rem;
+
+                    .about__box{
+                        text-align: center;
+                        border-radius: .25rem;
+                        padding: 1rem 1.25rem;
+                        background: $box-color;
+                        .about__icon{
+                            font-size: 1.5rem;
+                            color: $primary;
+                        }
+                        .about__title{
+                            font-size: $small-font-size;
+                        }
+                        .about__subtitle{
+                            font-size: $smaller-font-size;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .main__about{
+        padding-top: 5.5rem !important;
+
+        .about__container{
+            grid-template-columns: repeat(1, 1fr);
+    
+                .about__img{
+                    display: block !important;
+                }
+    
+                .about__data{
+                    margin-top: 1rem;
+                    .about__description{
+                        margin-bottom: 1rem !important;
+                    }
+                    .about__info{
+                        margin-bottom: 1rem !important;
+                    }
+                }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main__about{
+        padding-top: 3.5rem;
+        .about__section{
+            .about__title__heading{
+                margin-bottom: 2rem;
+            }
+    
+            .about__container{
+                position: relative;
+                display: block;
+                .about__img{
+                    width: 100%;
+                    display: none;
+                }
+                .about__data{
+                    .about__description{
+                        padding-right: 0;
+                    }
+    
+                }
+            }
+        }
+    }
+
+}
+
