@@ -1,4 +1,6 @@
 import React from 'react'
+import { BsEnvelope, BsMessenger, BsWhatsapp } from 'react-icons/bs'
+import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
 import { Typewriter } from 'react-simple-typewriter'
 
 
@@ -13,13 +15,13 @@ const Home = () => {
                   <span className='home__social__follow'>Follow Me</span>
                   <div className="home__social__links">
                     <a data-aos="fade-left" href="https://www.facebook.com/dalpatraj.dadawat.5/" className='home__social__link'>
-                    <i className="uil uil-facebook-f"></i>
+                    <FiFacebook/>
                     </a>
                     <a data-aos="fade-left" href="https://www.instagram.com/raj_dalpat_" className='home__social__link'>
-                    <i className="uil uil-instagram"></i>
+                    <FiInstagram/>
                     </a>
                     <a data-aos="fade-left" href="https://twitter.com/" className='home__social__link'>
-                    <i className="uil uil-twitter-alt"></i>
+                    <FiTwitter/>
                     </a>
                   </div>
                 </div>     
@@ -48,7 +50,7 @@ const Home = () => {
 
                 <div className="my__info">
                   <div className="info__item">
-                  <i className="uil uil-facebook-messenger-alt info__icon"></i>
+                  <BsMessenger className='info__icon'/>
                     <div>
                       <h3 className='info__title'>Messenger</h3>
                       <span className='info__subtitle'>Dalpat Raj</span>
@@ -56,7 +58,7 @@ const Home = () => {
                   </div>
 
                   <div className="info__item">
-                    <i className="uil uil-whatsapp info__icon"></i>
+                    <BsWhatsapp className='info__icon'/>
                     <div>
                       <h3 className='info__title'>Whatsapp</h3>
                       <span className='info__subtitle'>+91 9587478769</span>
@@ -64,7 +66,7 @@ const Home = () => {
                   </div>
 
                   <div className="info__item">
-                    <i className="uil uil-envelope-edit info__icon"></i>
+                    <BsEnvelope className='info__icon'/>
                     <div>
                       <h3 className='info__title'>Email</h3>
                       <span className='info__subtitle'>Dalpatt1212@gmail.com</span>

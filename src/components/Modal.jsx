@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { FaTimes } from 'react-icons/fa';
 
 const Modal = ({item, value}) => {
   const {img, detail__title, detail__description, created, role, technologies, view} = item[0];
@@ -25,7 +26,7 @@ const Modal = ({item, value}) => {
                 <li>Role - <span>{role}</span></li>
                 <li>View - <a  href={view}>{view}</a></li>
             </ul>
-            <i onClick={value} className="uil uil-times close__icon"></i>
+            <FaTimes onClick={value} className='close__icon'/>
         </div>
       </div>
     </div>

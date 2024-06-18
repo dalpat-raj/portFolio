@@ -1,5 +1,6 @@
 import React from 'react'
 import banner2 from '../assets/banner2.png'
+import { FiAward, FiEdit, FiHeadphones } from 'react-icons/fi'
 
 const About = () => {
   return (
@@ -16,19 +17,19 @@ const About = () => {
             <p className='about__description'>Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
             <div className="about__info">
               <div className="about__box">
-                <i className="uil uil-award-alt about__icon"></i>
+                <FiAward className='about__icon'/>
                 <h3 className='about__title'>Experience</h3>
                 <span className='about__subtitle'>2 + years</span>
               </div>
 
               <div className="about__box">
-                <i className="uil uil-suitcase-alt about__icon"></i>
+                <FiEdit className='about__icon'/>
                 <h3 className='about__title'>Completed</h3>
                 <span className='about__subtitle'>10 + projects</span>
               </div>
 
               <div className="about__box">
-                <i className="uil uil-headphones-alt about__icon"></i>
+                <FiHeadphones className='about__icon'/>
                 <h3 className='about__title'>Support</h3>
                 <span className='about__subtitle'>online 24/7</span>
               </div>

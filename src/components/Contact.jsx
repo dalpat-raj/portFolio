@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { BsEnvelope, BsMessenger, BsWhatsapp } from 'react-icons/bs';
 
 
 const Contact = () => {
@@ -26,7 +27,7 @@ const Contact = () => {
             <div className="contact__content">
                 <div className="contact__info contact__info__box">
                     <div data-aos="fade-up" className="contact__card">
-                        <i className="uil uil-envelope contact__icon"></i>
+                        <BsEnvelope className='contact__icon'/>
                         <h3 className="contact__card__title">Email</h3>
                         <span className='contact__card__data'>Dalpatt1212@gmail.com</span>
                         <span className="contact__button">Write Me  
@@ -35,7 +36,7 @@ const Contact = () => {
                     </div>
 
                     <div data-aos="fade-up" className="contact__card">
-                        <i className="uil uil-whatsapp contact__icon"></i>
+                        <BsWhatsapp className='contact__icon'/>
                         <h3 className="contact__card__title">Whatsapp</h3>
                         <span className='contact__card__data'>+91 9587478769</span>
                         <span className="contact__button">Write Me  
@@ -44,7 +45,7 @@ const Contact = () => {
                     </div>
 
                     <div data-aos="fade-up" className="contact__card">
-                        <i className="uil uil-facebook-messenger-alt contact__icon"></i>
+                        <BsMessenger className='contact__icon'/>
                         <h3 className="contact__card__title">Messenger</h3>
                         <span className='contact__card__data'>Dalpat Raj</span>
                         <span className="contact__button">Write Me  

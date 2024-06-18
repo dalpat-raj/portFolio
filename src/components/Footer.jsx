@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
 
 const Footer = () => {
   return (
@@ -24,13 +25,13 @@ const Footer = () => {
 
                 <div className="footer__socials">
                     <a href="https://www.facebook.com/dalpatraj.dadawat.5/" className='footer__social'>
-                    <i className="uil uil-facebook-f"></i>
+                    <FiFacebook/>
                     </a>
                     <a href="https://www.instagram.com/raj_dalpat_" className='footer__social'>
-                    <i className="uil uil-instagram"></i>
+                    <FiInstagram/>
                     </a>
                     <a href="https://twitter.com/" className='footer__social'>
-                    <i className="uil uil-twitter-alt"></i>
+                    <FiTwitter/>
                     </a>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { BsArrowUp } from 'react-icons/bs'
 
 const ScrollUp = () => {
 
@@ -11,7 +12,7 @@ const ScrollUp = () => {
 
   return (
     <a href="#home" className={showScroll ? "show__scroll" : "scrollup"}>
-        <i className="uil uil-arrow-up scrollup__icon"></i>
+        <BsArrowUp className='scrollup__icon'/>
     </a>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Modal from './Modal'
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 
 const Projexts = () => {
 
@@ -68,7 +69,7 @@ const Projexts = () => {
                         <img src={item.img} alt="work" className='work__img' />
                         <h3 className='work__title'>{item.work__title}</h3>
                         <span className="work__button" id={item.id} onClick={handleChange} >Demo 
-                        <i className='uil uil-arrow-right work__button__icon'></i>
+                        <MdKeyboardDoubleArrowRight className='work__button__icon'/>
                         </span>
                     </div>
                 ))
