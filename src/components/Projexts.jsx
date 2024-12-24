@@ -7,6 +7,17 @@ const Projexts = () => {
     const obj = [
         {
             id: 1,
+            work__title: 'Ecommerce Web App',
+            img: '/images/work-1.png',
+            detail__title: '',
+            detail__description: 'in this project i intigration Auth with NextJs You can also check my code',
+            created: '22 dec 2021',
+            technologies: 'NextJs Postgres Auth v5 tailwind css',
+            role: 'fullStack',
+            view: 'https://perfect-theta.vercel.app/'
+        },
+        {
+            id: 2,
             work__title: 'Multi Vendor E_Commerce',
             img: '/images/work-2.png',
             detail__title: 'Design & Devlope',
@@ -15,17 +26,6 @@ const Projexts = () => {
             technologies: 'React NodeJs MongoDB JavaScript Html Sass',
             role: 'Frontend & Backend',
             view: 'https://areenaa.in'
-        },
-        {
-            id: 2,
-            work__title: 'Web Design',
-            img: '/images/work-1.png',
-            detail__title: 'Github Project',
-            detail__description: 'in this project i intigration API with javaScript You You can also check my code',
-            created: '22 dec 2021',
-            technologies: 'html css JavaScript',
-            role: 'frontend',
-            view: 'github.com/dalpat-raj'
         },
         {
             id: 3,
