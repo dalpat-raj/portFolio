@@ -45,7 +45,7 @@ const Skills = () => {
 
                             <div>
                                 <h3 className="skill__name">SCSS</h3>
-                                <span className="skill__level">Advanced</span>
+                                <span className="skill__level">Intermidate</span>
                             </div>
                             </div>
 
@@ -53,8 +53,8 @@ const Skills = () => {
                             <i className="uil uil-check-circle"></i>
 
                             <div>
-                                <h3 className="skill__name">Bootstrap</h3>
-                                <span className="skill__level">Advanced</span>
+                                <h3 className="skill__name">Tailwind CSS</h3>
+                                <span className="skill__level">Intermidate</span>
                             </div>
                             </div>
 
@@ -80,7 +80,7 @@ const Skills = () => {
 
                             <div>
                                 <h3 className="skill__name">Figma</h3>
-                                <span className="skill__level">Advanced</span>
+                                <span className="skill__level">Intermidate</span>
                             </div>
                             </div>
 
@@ -107,7 +107,7 @@ const Skills = () => {
 
                             <div>
                                 <h3 className="skill__name">Node</h3>
-                                <span className="skill__level">Advanced</span>
+                                <span className="skill__level">Intermidate</span>
                             </div>
                             </div>
 
@@ -133,7 +133,7 @@ const Skills = () => {
                             <i className="uil uil-check-circle"></i>
 
                             <div>
-                                <h3 className="skill__name">My SQL</h3>
+                                <h3 className="skill__name">Postgres</h3>
                                 <span className="skill__level">Intermediate</span>
                             </div>
                             </div>
